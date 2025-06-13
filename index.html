@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Facturación Minimalista</title>
+<link rel="stylesheet" href="./scr/css/main.css">
+<script type="text/javascript" src="./scr/script.js"></script>
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>Facturación</h1>
+    <label for="precioServicio">Precio del Servicio</label>
+    <input type="number" id="precioServicio" min="0" step="0.01" placeholder="Ej: 100.00" />
+
+    <label for="porcentajeDescuento">Porcentaje de Descuento (%)</label>
+    <input type="number" id="porcentajeDescuento" min="0" step="0.01" placeholder="Ej: 10" />
+
+    <label for="tasaIVA">Tasa de IVA (%)</label>
+    <input type="number" id="tasaIVA" min="0" step="0.01" value="12" />
+
+    <button type="button" onclick="calcularFactura()">Calcular Factura</button>
+
+    <section id="resultado" aria-live="polite" aria-atomic="true"></section>
+    <h3>Realizado por Jamar Masias</h3>
+  </main>
+</body>
+</html>
+
